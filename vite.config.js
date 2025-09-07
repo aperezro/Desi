@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/Desi/',
   plugins: [ tailwindcss(),react()],
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
   }
 })
