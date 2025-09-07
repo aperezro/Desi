@@ -65,7 +65,7 @@ const Details = () => {
     return [
       {
         name: 'Makhani Sauce (Famously Paired with Butter Chicken Marinade)',
-        cal: 60, fat: 3, protein: 1, carbs: 5, __section: 'SAUCE',
+        cal: 170, fat: 17, protein: 3, carbs: 8, __section: 'SAUCE',
       },
       
       { name: 'Palak Sauce (Spinach)', cal: 140, fat: 9, protein: 4, carbs: 13, __section: 'SAUCE' },
