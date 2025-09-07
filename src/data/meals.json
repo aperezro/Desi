@@ -1,21 +1,24 @@
 {
   "Item 1": {
-    "name": "PALAK SAUCE WITH PANEER",
+    "name": "Basmati Rice Bowl",
     "image": "img3",
     "base": {
-      "name": "Palak Sauce",
+      "name": "Basmati Rice Bowl",
       "cal": 250,
       "fat": 5,
       "protein": 5,
       "carbs": 30
     },
     "options": [
-      { "name": "Desi Paneer", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
-      { "name": "Classic Spinach Paneer", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
-      { "name": "Spicy Paneer ", "cal": 150, "fat": 6, "protein": 21, "carbs": 1 }
+      { "name": "Keema (Ground Pork)", "cal": 350, "fat": 26, "protein": 30, "carbs": 8 },
+      { "name": "Butter Chicken Marinade", "cal": 280, "fat": 14, "protein": 33, "carbs": 2 },
+      { "name": "Chole (Chickpeas)", "cal": 490, "fat": 14, "protein": 22, "carbs": 73 },
+      { "name": "Paneer (Indian Cheese)", "cal": 470, "fat": 37, "protein": 35, "carbs": 5 }
+
     ],
-    "description": "Palak Sauce with Paneer is a popular Indian dish made with fresh spinach (palak) cooked in a creamy sauce, often flavored with spices and herbs. The addition of paneer (Indian cottage cheese) adds a rich and creamy texture to the dish, making it a delicious and nutritious option for vegetarians."
+    "description": "Palak Sauce with Paneer is a popular Indian dish made with fresh spinach (palak) cooked in a creamy sauce, often flavored with spices and herbs."
   },
+
   "Item 2": {
     "name": "CURRY FRIES",
     "image": "img4",
@@ -31,7 +34,7 @@
       { "name": "Mild Spice", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
       { "name": "Hot", "cal": 150, "fat": 6, "protein": 21, "carbs": 1 }
     ],
-    "description": "Curry Fries are a delicious and spicy twist on traditional fries. They are made with crispy potatoes, coated in a flavorful curry seasoning, and served with a tangy dipping sauce. Perfect for those who love a bit of heat in their snacks!"
+    "description": "Curry Fries are a delicious and spicy twist on traditional fries. They are made with crispy potatoes, coated in a flavorful curry seasoning, and served with a tangy dipping sauce."
   },
   "Item 3": {
     "name": "BUTTER CHICKEN SAUCE WITH CHICKEN MARINADE",
@@ -61,13 +64,12 @@
       "carbs": 30
     },
     "options": [
-      { "name": "Butter Chicken", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
-      { "name": "Butter Chicken Sauce", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
-      { "name": "Tofu", "cal": 150, "fat": 6, "protein": 21, "carbs": 3 },
-      { "name": "Grilled Veggies", "cal": 70, "fat": 2, "protein": 7, "carbs": 1 },
-       { "name": "Paneer", "cal": 120, "fat": 9, "protein": 11, "carbs": 4 }
+      { "name": "Keema (Ground Pork)", "cal": 350, "fat": 26, "protein": 30, "carbs": 8 },
+      { "name": "Butter Chicken Marinade", "cal": 280, "fat": 14, "protein": 33, "carbs": 2 },
+      { "name": "Chole (Chickpeas)", "cal": 490, "fat": 14, "protein": 22, "carbs": 73 },
+      { "name": "Paneer (Indian Cheese)", "cal": 470, "fat": 37, "protein": 35, "carbs": 5 }
     ],
-    "description": "Roti Wrap is a delicious and convenient meal option that features a soft, warm roti (Indian flatbread) filled with a variety of flavorful ingredients. The wrap can be customized with different fillings, such as grilled chicken, vegetables, or paneer, making it a versatile choice for lunch or dinner."
+    "description": "Roti Wrap is a delicious and convenient meal option that features a soft, warm roti (Indian flatbread) filled with a variety of flavorful ingredients."
   },
   "Item 5": {
     "name": "BASMATI RICE WITH KEEMA",
