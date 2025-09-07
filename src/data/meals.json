@@ -1,0 +1,106 @@
+{
+  "Item 1": {
+    "name": "PALAK SAUCE WITH PANEER",
+    "image": "img3",
+    "base": {
+      "name": "Palak Sauce",
+      "cal": 250,
+      "fat": 5,
+      "protein": 5,
+      "carbs": 30
+    },
+    "options": [
+      { "name": "Desi Paneer", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
+      { "name": "Classic Spinach Paneer", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
+      { "name": "Spicy Paneer ", "cal": 150, "fat": 6, "protein": 21, "carbs": 1 }
+    ],
+    "description": "Palak Sauce with Paneer is a popular Indian dish made with fresh spinach (palak) cooked in a creamy sauce, often flavored with spices and herbs. The addition of paneer (Indian cottage cheese) adds a rich and creamy texture to the dish, making it a delicious and nutritious option for vegetarians."
+  },
+  "Item 2": {
+    "name": "CURRY FRIES",
+    "image": "img4",
+    "base": {
+      "name": "Curry Fries",
+      "cal": 300,
+      "fat": 10,
+      "protein": 15,
+      "carbs": 40
+    },
+    "options": [
+      { "name": "Desi Original", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
+      { "name": "Mild Spice", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
+      { "name": "Hot", "cal": 150, "fat": 6, "protein": 21, "carbs": 1 }
+    ],
+    "description": "Curry Fries are a delicious and spicy twist on traditional fries. They are made with crispy potatoes, coated in a flavorful curry seasoning, and served with a tangy dipping sauce. Perfect for those who love a bit of heat in their snacks!"
+  },
+  "Item 3": {
+    "name": "BUTTER CHICKEN SAUCE WITH CHICKEN MARINADE",
+    "image": "img5",
+    "base": {
+      "name": "Butter Chicken Sauce",
+      "cal": 400,
+      "fat": 15,
+      "protein": 10,
+      "carbs": 35
+    },
+    "options": [
+      { "name": "Chicken Marinade", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
+      { "name": "Tofu", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
+      { "name": "Rogan gosht (Lamb)", "cal": 150, "fat": 6, "protein": 21, "carbs": 1 }
+    ],
+    "description": "Butter Chicken Sauce with Chicken Marinade is a rich and creamy dish that features tender chicken pieces marinated in a spiced yogurt mixture, cooked in a buttery tomato sauce. This dish is known for its aromatic flavors and is often served with naan or rice."
+  },
+  "Item 4": {
+    "name": "ROTI WRAP",
+    "image": "img6",
+    "base": {
+      "name": "Roti Wrap",
+      "cal": 200,
+      "fat": 25,
+      "protein": 5,
+      "carbs": 30
+    },
+    "options": [
+      { "name": "Butter Chicken", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
+      { "name": "Butter Chicken Sauce", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
+      { "name": "Tofu", "cal": 150, "fat": 6, "protein": 21, "carbs": 3 },
+      { "name": "Grilled Veggies", "cal": 70, "fat": 2, "protein": 7, "carbs": 1 },
+       { "name": "Paneer", "cal": 120, "fat": 9, "protein": 11, "carbs": 4 }
+    ],
+    "description": "Roti Wrap is a delicious and convenient meal option that features a soft, warm roti (Indian flatbread) filled with a variety of flavorful ingredients. The wrap can be customized with different fillings, such as grilled chicken, vegetables, or paneer, making it a versatile choice for lunch or dinner."
+  },
+  "Item 5": {
+    "name": "BASAMI RICE WITH KEEMA",
+    "image": "img7",
+    "base": {
+      "name": "Basmati Rice",
+      "cal": 250,
+      "fat": 5,
+      "protein": 20,
+      "carbs": 30
+    },
+    "options": [
+      { "name": "Kemma", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
+      { "name": "Mild Spice", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
+      { "name": "Hot", "cal": 150, "fat": 6, "protein": 21, "carbs": 1 }
+    ],
+    "description": "Basmati Rice with Keema is a flavorful dish that combines fragrant basmati rice with spiced minced meat (keema). The rice is fluffy and aromatic, while the keema is rich in flavor and protein. This dish is a perfect balance of taste and nutrition, making it a popular choice for a hearty meal."
+  },
+  "Item 6": {
+    "name": "BASAMI RICE WITH CHOLE",
+    "image": "img8",
+    "base": {
+      "name": "Basmati Rice",
+      "cal": 250,
+      "fat": 5,
+      "protein": 20,
+      "carbs": 30
+    },
+    "options": [
+      { "name": "Chole", "cal": 210, "fat": 8, "protein": 21, "carbs": 13 },
+      { "name": "Kemma", "cal": 180, "fat": 7, "protein": 32, "carbs": 0 },
+      { "name": "Onion Rings", "cal": 100, "fat": 1, "protein": 5, "carbs": 3 }
+    ],
+    "description": "Basmati Rice with Chole is a classic Indian dish that combines fragrant basmati rice with spiced chickpeas (chole). The rice is fluffy and aromatic, while the chole is rich in flavor and protein. This dish is a perfect balance of taste and nutrition, making it a popular choice for a hearty meal."
+  }
+}
