@@ -70,7 +70,7 @@
     "description": "Roti Wrap is a delicious and convenient meal option that features a soft, warm roti (Indian flatbread) filled with a variety of flavorful ingredients. The wrap can be customized with different fillings, such as grilled chicken, vegetables, or paneer, making it a versatile choice for lunch or dinner."
   },
   "Item 5": {
-    "name": "BASAMI RICE WITH KEEMA",
+    "name": "BASMATI RICE WITH KEEMA",
     "image": "img7",
     "base": {
       "name": "Basmati Rice",
@@ -87,7 +87,7 @@
     "description": "Basmati Rice with Keema is a flavorful dish that combines fragrant basmati rice with spiced minced meat (keema). The rice is fluffy and aromatic, while the keema is rich in flavor and protein. This dish is a perfect balance of taste and nutrition, making it a popular choice for a hearty meal."
   },
   "Item 6": {
-    "name": "BASAMI RICE WITH CHOLE",
+    "name": "BASMATI RICE WITH CHOLE",
     "image": "img8",
     "base": {
       "name": "Basmati Rice",
