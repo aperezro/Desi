@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './pages/Home';
@@ -30,9 +30,9 @@ function LayoutRoutes() {
 
 function App() {
   return (
-    <BrowserRouter basename="/Desi">
+    <HashRouter>
       <LayoutRoutes />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
