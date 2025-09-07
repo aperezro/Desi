@@ -30,7 +30,7 @@ function LayoutRoutes() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Desi">
       <LayoutRoutes />
     </BrowserRouter>
   );
