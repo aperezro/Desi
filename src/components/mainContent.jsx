@@ -26,8 +26,8 @@ const MainContent = () => {
       </div>
       {/* Mobile blobs */}
 <div className="absolute inset-0 z-2 pointer-events-none lg:hidden">
-  <div className="absolute top-10 left-1/2 h-[150px] w-[150px] bg-[#fe8046] opacity-40 blur-[60px] rounded-full -translate-x-1/2" />
-  <div className="absolute bottom-0 right-1/4 h-[120px] w-[120px] bg-[rgb(247,197,61)] opacity-50 blur-[50px] rounded-full" />
+  <div className="absolute top-290 left-6 h-[150px] w-[150px] bg-[#fe8046] opacity-40 blur-[60px] rounded-full -translate-x-1/2" />
+  <div className="absolute top-390 right-1/9 h-[120px] w-[120px] bg-[rgb(247,197,61)] opacity-50 blur-[50px] rounded-full" />
 </div>
         {/* Left side: Text */}
         <motion.div 

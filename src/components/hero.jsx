@@ -1,28 +1,39 @@
-import React from "react"; 
+import React from "react";
 import bannerLetters from "../assets/banner_letters.svg";
 import bannerBackground from "../assets/banner9.svg";
+import desiLogo from "../assets/desi_logo.png";
 
 const Hero = () => {
   return (
     <div className="w-full overflow-hidden z-[50] relative">
-      <div className="max-h-[400px] sm:max-h-[450px] md:max-h-[500px] relative">
-        {/* Overlay */}
-        <div className="absolute w-full h-full max-h-[400px] sm:max-h-[450px] md:max-h-[500px] bg-black/4 z-[51]"></div>
+      {/* Give the container an explicit height on mobile; sm+ can be taller */}
+      <div className="relative h-[300px] sm:h-[450px] md:h-[500px]">
+        
+        {/* Dark overlay only when bg is visible (sm+) */}
+        <div className="hidden sm:block absolute inset-0 bg-black/40 z-[51]" />
 
-        {/* New Image - Not Darkened */}
-        <div className="absolute w-full h-full flex justify-center items-center z-[52] transform translate-x-2 sm:translate-x-3 md:translate-x-5 translate-y-0">
+        {/* Centered logo/banner */}
+        <div className="absolute inset-0 flex justify-center items-center z-[52] translate-x-0 sm:translate-x-3 md:translate-x-5">
+         {/* Mobile: show logo with orange glow */}
+<img
+  src={desiLogo}
+  alt="Desi Eats Logo"
+  className="block sm:hidden w-[220px] object-contain drop-shadow-[0_0_15px_rgba(249,115,22,0.9)]"
+/>
+
+          {/* sm+: show banner letters */}
           <img
             src={bannerLetters}
             alt="Banner Writing"
-            className="w-[280px] xs:w-[320px] sm:w-[400px] md:w-[550px] lg:w-[600px] object-contain z-[52]"
+            className="hidden sm:block w-[400px] md:w-[550px] lg:w-[600px] object-contain"
           />
         </div>
 
-        {/* Full width stretched background image */}
+        {/* Background image only on sm+; make it fill the container */}
         <img
           src={bannerBackground}
           alt="Food"
-          className="w-full h-[400px] sm:h-[450px] md:h-[500px] object-cover z-[50]"
+          className="hidden sm:block absolute inset-0 w-full h-full object-cover z-[50]"
         />
       </div>
     </div>
@@ -30,7 +41,4 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
 
