@@ -10,16 +10,16 @@ const Hero = () => {
       <div className="relative h-[300px] sm:h-[450px] md:h-[500px]">
         
         {/* Dark overlay only when bg is visible (sm+) */}
-        <div className="hidden sm:block absolute inset-0 bg-black/40 z-[51]" />
+        <div className="hidden sm:block absolute inset-0 bg-black/5 z-[51]" />
 
         {/* Centered logo/banner */}
         <div className="absolute inset-0 flex justify-center items-center z-[52] translate-x-0 sm:translate-x-3 md:translate-x-5">
          {/* Mobile: show logo with orange glow */}
-<img
-  src={desiLogo}
-  alt="Desi Eats Logo"
-  className="block sm:hidden w-[220px] object-contain drop-shadow-[0_0_15px_rgba(249,115,22,0.9)]"
-/>
+          <img
+          src={desiLogo}
+          alt="Desi Eats Logo"
+          className="block sm:hidden w-[220px] object-contain drop-shadow-[0_0_15px_rgba(249,115,22,0.9)]"
+          />
 
           {/* sm+: show banner letters */}
           <img
