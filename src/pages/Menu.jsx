@@ -13,6 +13,11 @@ import img8 from "../assets/8.png";
 
 const HERO_IMG = img1;
 const imageMap = { img3, img4, img5, img6, img7, img8 };
+// --- simple placeholders; replace with your real totals later ---------------
+const totals = { calories: 0, fat: 0, protein: 0, carbs: 0 };
+const pad2 = (n) => String(Math.max(0, Math.floor(n))).padStart(2, "0");
+// ---------------------------------------------------------------------------
+
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -87,13 +92,95 @@ const Menu = () => {
   return (
     <div className="min-h-screen w-full bg-amber-50" style={{ fontFamily: "'Hanken Grotesk', sans-serif" }}>
       {/* HERO */}
-      <section className="relative w-full h-[320px] md:h-[420px] lg:h-[480px] overflow-hidden">
-        <img src={HERO_IMG} alt="Menu hero" className="absolute inset-0 h-full w-full object-cover scale-110" />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <h1 className="text-white text-5xl md:text-6xl font-extrabold tracking-tight">MENU</h1>
+
+      {/* HERO (Nutrition-style) */}
+{/* HERO (mobile = centered card; desktop = two-column with totals) */}
+
+<section className="w-full bg-[rgb(253,243,210)] border-t border-b">
+  
+  <div className="mx-auto max-w-7xl">
+    
+    {/* MOBILE VIEW (matches screenshot) */}
+    <div className="md:hidden relative overflow-hidden px-6 py-10 text-center">
+      
+      {/* soft garnish blobs; replace with actual corner images if you have them */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className=" absolute inset-0 bg-black/5 z-[51]" />
+        <div className="absolute -left-10 -bottom-12 w-40 h-40 rounded-full bg-orange-200/50 blur-xl" />
+        <div className="absolute -right-11 -top-12 w-20 h-40 rounded-full bg-[#f2b4d2] blur-2xl" />
+      </div>
+
+      <p className="uppercase tracking-[0.35em] text-[#7C2D53] text-sm font-extrabold">
+        CALCULATE
+      </p>
+      <h1 className="mt-1 text-[#fe8046] text-5xl font-extrabold tracking-[0.06em]">
+        NUTRITION
+      </h1>
+      <p className="mt-4 mx-auto max-w-[28ch] text-[#7C2D53]/80 text-sm font-semibold">
+        Build your calorie, carb and nutrition information based on
+        your selected meal below using the nutrition calculator.
+      </p>
+      
+    </div>
+
+    {/* TABLET/DESKTOP VIEW (your previous layout) */}
+    <div className="hidden md:flex items-center gap-12 px-8 py-12">
+      
+      {/* Left: Title & copy */}
+      <div className="flex-1">
+        
+        <p className="uppercase tracking-widest text-[#7C2D53] text-lg font-bold">
+          Calculate
+        </p>
+        <h1 className="mt-1 text-[#fe8046] text-6xl font-extrabold tracking-[0.08em]">
+          NUTRITION
+        </h1>
+        <p className="mt-4 max-w-md text-[#7C2D53]/80 font-bold">
+          Build your calorie, carb and nutrition information based on
+          your selected meal below using the nutrition calculator.
+        </p>
+    
+      </div>
+
+      {/* Divider */}
+      <div className="w-px self-stretch bg-[#d4d4d4]" />
+
+      {/* Right: Big totals */}
+      <div className="flex-1 flex items-center gap-12">
+        {/* Calories */}
+        <div className="flex items-baseline">
+          <span className="text-[#4b2a1d] text-7xl font-extrabold leading-none">
+            {pad2(totals.calories)}
+          </span>
+          <span className="ml-2 text-[#4b2a1d] text-3xl font-extrabold">cal</span>
         </div>
-      </section>
+
+        {/* Macros */}
+        <div className="flex items-center gap-8">
+          <div className="text-center">
+            <div className="text-[#4b2a1d] text-2xl font-extrabold leading-none">
+              {pad2(totals.fat)}g
+            </div>
+            <div className="text-[#4b2a1d]/80 text-sm mt-1">Fat</div>
+          </div>
+          <div className="text-center">
+            <div className="text-[#4b2a1d] text-2xl font-extrabold leading-none">
+              {pad2(totals.protein)}g
+            </div>
+            <div className="text-[#4b2a1d]/80 text-sm mt-1">Protein</div>
+          </div>
+          <div className="text-center">
+            <div className="text-[#4b2a1d] text-2xl font-extrabold leading-none">
+              {pad2(totals.carbs)}g
+            </div>
+            <div className="text-[#4b2a1d]/80 text-sm mt-1">Carbs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CHOOSE YOUR BASE — two large tiles only */}
       <section className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8 pt-12 md:pt-16 pb-16">
