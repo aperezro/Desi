@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlinePhone, AiOutlineMail, AiOutlineHome } from "react-icons/ai";
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx"; // "X" logo for Twitter/X
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import desiLogoVertical from "../assets/desi_writing.png";
@@ -57,6 +57,17 @@ const Footer = () => {
                 >
                   <FaInstagram size={24} />
                 </a>
+                <a 
+        href="https://www.linkedin.com/in/krish-khemlani-204105217/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="hover:text-blue-600 transition-all"
+      >
+        <FaLinkedin size={24} />
+      </a>
+
+
+
               </div>
             </div>
           </div>

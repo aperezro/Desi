@@ -77,13 +77,48 @@ const MainUnder = () => {
             Get your order To go! Just like the rest of our campus dining, we accept orders through boost.
           </p>
           <a
-            href="https://boostapp.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 px-4 py-2 bg-[#f16323] text-white hover:bg-yellow-500 rounded-full transition-all font-bold border border-black hover:scale-105 shadow-lg text-sm sm:text-base"
-          >
-            View details &raquo;
-          </a>
+  href="https://boostapp.io/"
+  onClick={(e) => {
+    e.preventDefault();
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Links
+    const appLink = "https://boostapp.app.link"; // universal deep link
+    const iosStoreLink = "https://apps.apple.com/us/app/boost-mobile-food-ordering/id1076701365";
+    const androidStoreLink = "https://play.google.com/store/apps/details?id=com.ncr.boost";
+    const desktopLink = "https://boostapp.io/";
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      // iOS
+      const now = Date.now();
+      window.location.href = appLink;
+
+      setTimeout(() => {
+        if (Date.now() - now < 1500) {
+          window.location.href = iosStoreLink;
+        }
+      }, 1000);
+    } else if (/android/i.test(userAgent)) {
+      // Android
+      const now = Date.now();
+      window.location.href = appLink;
+
+      setTimeout(() => {
+        if (Date.now() - now < 1500) {
+          window.location.href = androidStoreLink;
+        }
+      }, 1000);
+    } else {
+      // Desktop fallback
+      window.location.href = desktopLink;
+    }
+  }}
+  className="mt-3 px-4 py-2 bg-[#f16323] text-white hover:bg-yellow-500 rounded-full transition-all font-bold border border-black hover:scale-105 shadow-lg text-sm sm:text-base"
+>
+  View details &raquo;
+</a>
+
         </motion.div>
 
         {/* CARD 2 */}
