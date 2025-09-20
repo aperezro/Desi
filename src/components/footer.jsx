@@ -33,13 +33,51 @@ const Footer = () => {
               >Locations
             </Link>
 
-              <p><a 
-        href="https://boostapp.io/" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="text-black hover:text-orange-600 "
-      >Boost Order
-      </a>
+              <p>
+                
+               <a
+  href="https://boostapp.io/"
+  onClick={(e) => {
+    e.preventDefault();
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Links
+    const appLink = "https://boostapp.app.link"; // universal deep link
+    const iosStoreLink = "https://apps.apple.com/us/app/boost-mobile-food-ordering/id1076701365";
+    const androidStoreLink = "https://play.google.com/store/apps/details?id=com.ncr.boost";
+    const desktopLink = "https://boostapp.io/";
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      // iOS
+      const now = Date.now();
+      window.location.href = appLink;
+
+      setTimeout(() => {
+        if (Date.now() - now < 1500) {
+          window.location.href = iosStoreLink;
+        }
+      }, 1000);
+    } else if (/android/i.test(userAgent)) {
+      // Android
+      const now = Date.now();
+      window.location.href = appLink;
+
+      setTimeout(() => {
+        if (Date.now() - now < 1500) {
+          window.location.href = androidStoreLink;
+        }
+      }, 1000);
+    } else {
+      // Desktop
+      window.open(desktopLink, "_blank", "noopener,noreferrer");
+    }
+  }}
+  className="text-black hover:text-orange-600"
+>
+  Boost Order
+</a>
+
     </p>
 
           </div>
