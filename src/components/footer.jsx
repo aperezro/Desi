@@ -23,7 +23,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          {/* Our Food */}
+          {/* Our Food e*/}
           <div className="space-y-4">
             <h3 className="uppercase font-bold">Our Food</h3>
             
