@@ -1,18 +1,58 @@
 <!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <title>Desi Eats — Healthy, Customizable, Fast-Casual Indian</title>
+  <meta name="description" content="Desi Eats serves fresh, customizable Indian bowls and wraps. Order ahead with Boost and enjoy vibrant flavors made fast. Located at Babson College." />
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.desieatsus.com/" />
 
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./desi_white.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Desi Eats</title>
-    
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+  <!-- Favicon / Icons -->
+  <link rel="icon" type="image/png" href="/desi_white.png" />
+  <meta name="theme-color" content="#f16323" />
+
+  <!-- Open Graph (Facebook/LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Desi Eats" />
+  <meta property="og:title" content="Desi Eats — Healthy, Customizable, Fast-Casual Indian" />
+  <meta property="og:description" content="Custom Indian bowls and wraps. Order ahead with Boost. Vibrant flavors made fast." />
+  <meta property="og:url" content="https://www.desieatsus.com/" />
+
+  <!-- Performance: fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- LocalBusiness / Restaurant schema (fill in your real data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Desi Eats",
+    "url": "https://www.desieatsus.com/",
+    "image": "https://www.desieatsus.com/desi_white.png",
+    "servesCuisine": ["Indian"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "231 Forest St, Babson Park",
+      "addressLocality": "Wellesley",
+      "addressRegion": "MA",
+      "postalCode": "02457",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$",
+    "telephone": "+1-787-354-4329"
+  }
+  </script>
+
+  <!-- If you use a manifest/PWA -->
+  <!-- <link rel="manifest" href="/manifest.webmanifest"> -->
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
