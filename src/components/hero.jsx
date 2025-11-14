@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bannerLetters from "../assets/banner_letters.svg";
 import bannerBackground from "../assets/banner9.svg";
 import desiLogo from "../assets/desi_logo.png";
 
 const Hero = () => {
+  // Preload the banner image early for faster loading
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = bannerBackground;
+    link.fetchPriority = "high";
+    document.head.appendChild(link);
+    
+    return () => {
+      // Cleanup on unmount
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
+    };
+  }, []);
+
   return (
     <div className="w-full overflow-hidden z-[50] relative">
       {/* Give the container an explicit height on mobile; sm+ can be taller */}
@@ -34,6 +51,8 @@ const Hero = () => {
           src={bannerBackground}
           alt="Food"
           className="hidden sm:block absolute inset-0 w-full h-full object-cover z-[50]"
+          fetchPriority="high"
+          loading="eager"
         />
       </div>
     </div>
