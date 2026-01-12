@@ -18,8 +18,8 @@ const InstagramEmbed = () => {
   return (
     <div className="flex justify-center mt-10 px-4">
       <blockquote
-        className="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/reel/DOWev9wjosl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        className="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/p/DTNwa3fDs7U/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         data-instgrm-version="14"
         style={{
           background: "#FFF",
