@@ -1,7 +1,7 @@
 import React from "react";
 import InstagramEmbed from "../components/InstagramEmbed";
 
-import video from "../assets/desivideo.mp4";
+import krish from "../assets/krish.jpg";
 import desisquare from "../assets/desisquare.svg";
 
 const Connect = () => {
@@ -63,30 +63,16 @@ const Connect = () => {
             </span>{" "}
             <br />
             <span className="text-gray-500 text-lg sm:text-xl lg:text-2xl font-semibold">
-              Desi Pub Takeover 3/26/2025
+              Desi Eats Featured by Babson 1/8/2026
             </span>
           </div>
 
           <div className="w-full h-full border border-stone-800 rounded-2xl sm:rounded-3xl overflow-hidden z-[100]">
-          <video
-  src={video}
-  autoPlay
-  loop
-  muted
-  playsInline
-  // Safari/WebKit hint (React passes unknown attrs through):
-  webkit-playsinline="true"
-  controls={false}
-  disablePictureInPicture
-  controlsList="nodownload noplaybackrate noremoteplayback"
-  preload="auto"
-  className="w-full h-full object-cover pointer-events-none md:pointer-events-auto"
-  onLoadedMetadata={(e) => {
-    // ensure playback if autoplay was blocked
-    const v = e.currentTarget;
-    if (v.paused) { v.play().catch(() => {}); }
-  }}
-/>
+          <img
+            src={krish}
+            alt="krish"
+            className="w-full h-full object-cover pointer-events-none md:pointer-events-auto"
+          />
 
           </div>
         </div>
