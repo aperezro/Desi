@@ -4,7 +4,7 @@
     "image": "img3",
     "base": {
       "name": "Basmati Rice Bowl",
-      "cal": 250,
+      "cal": 200,
       "fat": 5,
       "protein": 5,
       "carbs": 30
@@ -41,7 +41,7 @@
     "image": "img5",
     "base": {
       "name": "Butter Chicken Sauce",
-      "cal": 400,
+      "cal": 200,
       "fat": 15,
       "protein": 10,
       "carbs": 35
@@ -58,7 +58,7 @@
     "image": "img6",
     "base": {
       "name": "Roti Wrap",
-      "cal": 200,
+      "cal": 150,
       "fat": 25,
       "protein": 5,
       "carbs": 30
@@ -76,7 +76,7 @@
     "image": "img7",
     "base": {
       "name": "Basmati Rice",
-      "cal": 250,
+      "cal": 200,
       "fat": 5,
       "protein": 20,
       "carbs": 30
@@ -93,7 +93,7 @@
     "image": "img8",
     "base": {
       "name": "Basmati Rice",
-      "cal": 250,
+      "cal": 200,
       "fat": 5,
       "protein": 20,
       "carbs": 30
