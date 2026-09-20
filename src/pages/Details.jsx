@@ -2,13 +2,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import mealsData from '../data/meals.json';
 
-import img1 from '../assets/1.png'; // fallback
-import img3 from '../assets/3.png';
-import img4 from '../assets/4.png';
-import img5 from '../assets/5.png';
-import img6 from '../assets/6.png';
-import img7 from '../assets/7.png';
-import img8 from '../assets/8.png';
+import img1 from '../assets/optimized/1-900.webp'; // fallback
+import img3 from '../assets/optimized/3-900.webp';
+import img4 from '../assets/optimized/4-900.webp';
+import img5 from '../assets/optimized/5-900.webp';
+import img6 from '../assets/optimized/6-900.webp';
+import img7 from '../assets/optimized/7-900.webp';
+import img8 from '../assets/optimized/8-900.webp';
 
 const imageMap = { img3, img4, img5, img6, img7, img8 };
 

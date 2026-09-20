@@ -3,7 +3,7 @@ import { AiOutlinePhone, AiOutlineMail, AiOutlineHome } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx"; // "X" logo for Twitter/X
 import { FaApple, FaGooglePlay } from "react-icons/fa";
-import desiLogoVertical from "../assets/desi_writing.png";
+import desiLogoVertical from "../assets/optimized/desi_writing-624.webp";
 import { Link } from "react-router-dom";
 
 
@@ -133,7 +133,7 @@ const Footer = () => {
 
           {/* Vertical Logo */}
           <div className="flex flex-col items-center justify-start pt-19">
-            <img src={desiLogoVertical} alt="Desi Eats Vertical Logo" className="w-45 rotate-90" />
+            <img src={desiLogoVertical} alt="Desi Eats Vertical Logo" loading="lazy" decoding="async" className="w-45 rotate-90" />
           </div>
 
         </div>
