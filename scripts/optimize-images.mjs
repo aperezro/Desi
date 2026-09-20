@@ -8,7 +8,7 @@ await mkdir(output, { recursive: true });
 
 // Keep source artwork intact; the app imports these committed web-sized copies.
 const images = [
-  ['banner9.svg', 'banner9', [1920]],
+  ['banner9.svg', 'banner9', [2400, 4800]],
   ['foodcourt.svg', 'foodcourt', [600, 1200]],
   ['desisquare.svg', 'desisquare', [600, 1200]],
   ['desi_logo.png', 'desi_logo', [440]],
@@ -33,7 +33,7 @@ for (const [source, name, widths] of images) {
     const info = await sharp(input, { density })
       .rotate()
       .resize({ width, withoutEnlargement: !source.endsWith('.svg') })
-      .webp({ quality: 84, alphaQuality: 100, effort: 6 })
+      .webp({ quality: 84, alphaQuality: 100, effort: 6, lossless: name === 'banner9' })
       .toFile(destination);
     optimizedBytes += info.size;
     console.log(`${name}-${width}.webp: ${info.width}x${info.height}, ${(info.size / 1024).toFixed(1)} KB`);

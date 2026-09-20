@@ -1,6 +1,7 @@
 import React from "react";
 import bannerLetters from "../assets/banner_letters.svg";
-import bannerBackground from "../assets/optimized/banner9-1920.webp";
+import bannerBackground from "../assets/optimized/banner9-2400.webp";
+import bannerBackgroundRetina from "../assets/optimized/banner9-4800.webp";
 import desiLogo from "../assets/optimized/desi_logo-440.webp";
 
 const Hero = () => {
@@ -29,12 +30,17 @@ const Hero = () => {
 
         {/* Background image only on sm+; make it fill the container */}
         <picture className="hidden sm:block">
-          <source media="(min-width: 640px)" srcSet={bannerBackground} />
+          {/* A 4:1 image covering a 500px-tall hero needs at least 2000 CSS pixels. */}
+          <source
+            media="(min-width: 640px)"
+            srcSet={`${bannerBackground} 2400w, ${bannerBackgroundRetina} 4800w`}
+            sizes="(min-width: 2000px) 100vw, (min-width: 768px) 2000px, 1800px"
+          />
           <img
             src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
             alt=""
-            width="1920"
-            height="480"
+            width="2400"
+            height="600"
             className="absolute inset-0 w-full h-full object-cover z-[50]"
             fetchPriority="high"
             loading="eager"
