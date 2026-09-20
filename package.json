@@ -5,6 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "optimize:banner": "node scripts/optimize-banner.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
     "dev": "vite",
     "build": "vite build",

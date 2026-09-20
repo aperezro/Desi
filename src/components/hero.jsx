@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import bannerLetters from "../assets/banner_letters.svg";
-import bannerBackground from "../assets/banner9.svg";
+import bannerBackground from "../assets/optimized/banner9.svg";
 import desiLogo from "../assets/desi_logo.png";
 
 const Hero = () => {
@@ -60,4 +60,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
