@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../assets/desi_writing.png';
-import smallLogo from '../assets/desi_main.png';
+import logo from '../assets/optimized/desi_writing-624.webp';
+import smallLogo from '../assets/optimized/desi_main-300.webp';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { MdLocationOn } from "react-icons/md";
 

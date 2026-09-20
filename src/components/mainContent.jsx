@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import foodCourt from "../assets/foodcourt.svg";
+import foodCourt from "../assets/optimized/foodcourt-1200.webp";
+import foodCourtSmall from "../assets/optimized/foodcourt-600.webp";
 
 
 
@@ -71,6 +72,11 @@ const MainContent = () => {
         >
           <img
             src={foodCourt}
+            srcSet={`${foodCourtSmall} 600w, ${foodCourt} 1200w`}
+            sizes="(min-width: 1640px) 756px, (min-width: 1024px) 46vw, (min-width: 640px) 512px, 448px"
+            width="1200"
+            height="1553"
+            decoding="async"
             alt="About Desi Eats"
             className="w-full max-w-md sm:max-w-lg lg:max-w-none h-[300px] sm:h-[400px] lg:h-[500px] object-cover rounded-md shadow-2xl"
           />

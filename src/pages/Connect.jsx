@@ -1,8 +1,9 @@
 import React from "react";
 import InstagramEmbed from "../components/InstagramEmbed";
 
-import krish from "../assets/krish.jpg";
-import desisquare from "../assets/desisquare.svg";
+import krish from "../assets/optimized/krish-800.webp";
+import desisquare from "../assets/optimized/desisquare-1200.webp";
+import desisquareSmall from "../assets/optimized/desisquare-600.webp";
 
 const Connect = () => {
   return (
@@ -70,6 +71,10 @@ const Connect = () => {
           <div className="w-full h-full border border-stone-800 rounded-2xl sm:rounded-3xl overflow-hidden z-[100]">
           <img
             src={krish}
+            width="800"
+            height="1000"
+            loading="lazy"
+            decoding="async"
             alt="krish"
             className="w-full h-full object-cover pointer-events-none md:pointer-events-auto"
           />
@@ -81,6 +86,12 @@ const Connect = () => {
         <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden flex-shrink-0 z-[100] md:-translate-x-10">
           <img
             src={desisquare}
+            srcSet={`${desisquareSmall} 600w, ${desisquare} 1200w`}
+            sizes="(min-width: 768px) 1000px, 500px"
+            width="1200"
+            height="1200"
+            loading="lazy"
+            decoding="async"
             alt="food"
             className="w-[500px] h-[500px] md:w-[1000px] md:h-[1200px] object-cover md:-translate-x-[35px] mx-auto"
           />
@@ -118,6 +129,8 @@ const Connect = () => {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
             alt="Instagram Logo"
+            loading="lazy"
+            decoding="async"
             className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] object-contain"
           />
           <h2

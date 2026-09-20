@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import boost from "../assets/boost.png";
-import logo from "../assets/desi_logo.png";
+import logo from "../assets/optimized/desi_logo-440.webp";
 import college from "../assets/graduation.svg";
 import { Link } from "react-router-dom";
 
@@ -68,7 +68,7 @@ const MainUnder = () => {
           variants={isMobile ? undefined : itemVariants}
         >
           <div className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px] bg-gray-500 rounded-full overflow-hidden flex justify-center items-center">
-            <img src={boost} alt="Boost" className="w-full h-full object-cover" />
+            <img src={boost} alt="Boost" loading="lazy" decoding="async" className="w-full h-full object-cover" />
           </div>
           <h2 className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold" style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontWeight: 800 }}>
             Mobile Order
@@ -131,7 +131,7 @@ const MainUnder = () => {
           variants={isMobile ? undefined : itemVariants}
         >
           <div className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px] bg-gray-500 rounded-full overflow-hidden flex justify-center items-center">
-            <img src={logo} alt="Logo" className="w-full h-full object-cover" />
+            <img src={logo} alt="Logo" loading="lazy" decoding="async" className="w-full h-full object-cover" />
           </div>
           <h2 className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold" style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontWeight: 800 }}>
             Stay up to date!
@@ -159,7 +159,7 @@ const MainUnder = () => {
           variants={isMobile ? undefined : itemVariants}
         >
           <div className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px] bg-[#9a2546] rounded-full flex justify-center items-center">
-            <img src={college} alt="Logo" className="w-full h-full object-cover" />
+            <img src={college} alt="Logo" loading="lazy" decoding="async" className="w-full h-full object-cover" />
           </div>
           <h2 className="mt-3 sm:mt-4 text-lg sm:text-xl font-semibold" style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontWeight: 800 }}>
             Want us at your Campus?
